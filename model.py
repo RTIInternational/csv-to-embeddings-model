@@ -35,7 +35,7 @@ def main():
 	#Tune the model
 	model.fit(train_objectives=[(train_dataloader, train_loss)], epochs=1, warmup_steps=100)
 
-	model.save("test_embeddings_model")
+	model.save("trained_model")
 
 if __name__ == "__main__":
     main()
